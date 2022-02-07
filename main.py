@@ -106,6 +106,6 @@ def generate_art(path: str):
     img = img.resize([target_size, target_size], resample=Image.ANTIALIAS)
     img.save(path) #() give the name of the file
 
-# n = int(input("Enter number of images: \n "))
-for i in range(1):
+n = int(input("Enter number of images: \n "))
+for i in range(1,(n+1)):
     generate_art(f"test_img{i}.png")
