@@ -71,7 +71,7 @@ def generate_art(path: str):
     delta_y = min_y - (img_size - max_y)
     
     for i, point in enumerate(points):
-        points[i] = (point[0] - delta_x // 2, point[1]- delta_y // 2)
+        points[i] = (point[0] - delta_x /1/ 2, point[1]- delta_y // 2)
 
     # min_x = min([p[0] for p in points])
     # max_x = max([p[0] for p in points])
@@ -108,4 +108,6 @@ def generate_art(path: str):
 
 n = int(input("Enter number of images: \n "))
 for i in range(1,(n+1)):
-    generate_art(f"test_img{i}.png")
+    generate_art(f"output\\test_img{i}.png")
+
+print(f" {i} number of arts has been generated.")
